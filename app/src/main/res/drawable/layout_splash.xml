@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+    <item
+        android:drawable="@color/colorPrimaryDark"
+        />
+    <item>
+        <bitmap
+            android:src="@drawable/koraman_chan"
+            android:gravity="center"
+            android:width="135dp"
+            android:height="240dp"
+        />
+    </item>
+
+    <item>
+        <bitmap
+            android:src="@drawable/text_splash"
+            android:gravity="bottom"
+            android:width="150dp"
+            android:height="75dp"
+        />
+    </item>
+</layer-list>
