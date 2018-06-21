@@ -14,7 +14,7 @@ public class RestaurantsSearcher extends AppCompatActivity implements AdapterVie
     private AppCompatButton b1;
     private Spinner sp1,sp2;
     private String[] price_list = {"100","200","300","400","500"};
-    private String[] food_list = {"Any Kind","Indian","Chinese","Fast Food","Italian","Korean","Mexican","Tibetan"};
+    private String[] food_list = {"Any Kind","Indian","Chinese","Hamburger","Italian","Korean","Mexican","Tibetan"};
 
 
     @Override

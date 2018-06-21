@@ -1,29 +1,40 @@
 package com.example.yuzzle.koramannavi;
 
+
 /**
  * Created by yuzzle on 2018/05/30.
  */
 
 public class Restaurants {
 
+//    @SerializedName("appearance")
     private Integer appearance;
+//    @SerializedName("name")
     private String name;
+//    @SerializedName("minprice")
+    private int minprice;
+//    @SerializedName("maxprice")
+    private int maxprice;
+//    @SerializedName("type")
     private String kind;
-    private String range;
-    private String recommend;
+//    @SerializedName("meat")
     private Integer meatAvailable;
+//    @SerializedName("alcohol")
     private Integer alcoholAvailable;
+//    @SerializedName("creditcard")
     private Integer creditAvailable;
+    private Integer mapMarkerLink;
 
-    public Restaurants(Integer appearance, String name, String kind, String range, String recommend, Integer meat, Integer alcohol, Integer credit) {
+    public Restaurants(Integer appearance, String name, String kind, int minprice, int maxprice, Integer meat, Integer alcohol, Integer credit, Integer marker) {
         this.appearance = appearance;
         this.name = name;
         this.kind = kind;
-        this.range = range;
-        this.recommend = recommend;
+        this.minprice = minprice;
+        this.maxprice = maxprice;
         meatAvailable = meat;
         alcoholAvailable = alcohol;
         creditAvailable = credit;
+        mapMarkerLink = marker;
     }
 
     public Integer getAppearance() {
@@ -38,12 +49,12 @@ public class Restaurants {
         return kind;
     }
 
-    public String getRange() {
-        return range;
+    public int getMinprice() {
+        return minprice;
     }
 
-    public String getRecommend() {
-        return recommend;
+    public int getMaxprice() {
+        return maxprice;
     }
 
     public Integer getMeatAvailable() {
@@ -56,5 +67,9 @@ public class Restaurants {
 
     public Integer getCreditAvailable() {
         return creditAvailable;
+    }
+
+    public Integer getMapMarkerLink() {
+        return mapMarkerLink;
     }
 }

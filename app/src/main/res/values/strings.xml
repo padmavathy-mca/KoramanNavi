@@ -1,13 +1,11 @@
 <resources>
     <string name="app_name">KoramanNavi</string>
-    <string name="restaurants_button">restaurants</string>
-    <string name="stores_button">stores</string>
+    <string name="find_button">Find a Restaurant</string>
+    <string name="add_button">Add new Restaurant</string>
     <string name="food">Food</string>
     <string name="price">Max Price</string>
     <string name="meat">Meat</string>
     <string name="alcohol">Alcohol</string>
-    <string name="ambiance">Ambiance</string>
-    <string name="time">Time</string>
     <string name="title_activity_search_results">SearchResults</string>
     <string name="title_map">Map</string>
     <string name="title_list">List</string>
@@ -15,4 +13,5 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="available">Availability:</string>
 </resources>

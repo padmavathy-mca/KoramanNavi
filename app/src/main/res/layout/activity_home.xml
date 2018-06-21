@@ -19,28 +19,30 @@
         android:id="@+id/button1"
         android:layout_marginTop="25dp"
         android:layout_gravity="center"
-        android:layout_width="250dp"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:padding="20dp"
-        android:text="@string/restaurants_button"
+        android:text="@string/find_button"
         android:textColor="@android:color/white"
         android:textSize="25sp"
         android:textStyle="bold"
         android:background="@drawable/layout_button"
+        android:textAllCaps="false"
         />
 
     <android.support.v7.widget.AppCompatButton
         android:id="@+id/button2"
         android:layout_marginTop="25dp"
         android:layout_gravity="center"
-        android:layout_width="250dp"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:paddingVertical="20dp"
-        android:text="@string/stores_button"
+        android:text="@string/add_button"
         android:textColor="@android:color/white"
         android:textSize="25sp"
         android:textStyle="bold"
         android:background="@drawable/layout_button"
+        android:textAllCaps="false"
         />
 
 </LinearLayout>

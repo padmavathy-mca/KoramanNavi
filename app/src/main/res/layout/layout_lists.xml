@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="220dp"
     xmlns:app="http://schemas.android.com/apk/res-auto">
+    <!--xmlns:tools="http://schemas.android.com/tools"-->
+    <!--tools:context="com.example.yuzzle.koramannavi.ListsFragment"-->
+
 
     <android.support.v7.widget.CardView
         android:layout_width="match_parent"
@@ -18,98 +21,140 @@
 
             <android.support.v7.widget.AppCompatTextView
                 android:id="@+id/text1"
-                android:gravity="center"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="25sp"
+                android:gravity="center"
+                android:text="The Yuzurian Yuzuru Restaurant"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
                 android:textColor="@android:color/black"
-                android:textStyle="bold"
-                />
+                android:textSize="20sp"
+                android:textStyle="bold" />
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="130dp"
+                android:layout_height="match_parent"
                 android:orientation="horizontal">
 
                 <android.support.v7.widget.AppCompatImageView
                     android:id="@+id/pic1"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
                     android:layout_marginLeft="10dp"
-                    android:layout_width="120dp"
-                    android:layout_height="120dp"
+                    android:foreground="@drawable/layout_imageview_corner"
                     android:scaleType="fitXY"
-                    android:src="@drawable/restaurant_appearance_ex"/>
+                    android:src="@drawable/cafe_medley_1" />
 
                 <LinearLayout
-                    android:layout_marginLeft="20dp"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
+                    android:layout_marginLeft="20dp"
                     android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:paddingTop="3dp"
+                        android:text="Type :"
+                        android:textSize="15sp" />
 
                     <android.support.v7.widget.AppCompatTextView
                         android:id="@+id/text2"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:textSize="20sp"
-                        android:textColor="@android:color/black"/>
+                        android:text="Japanese"
+                        android:textColor="@android:color/black"
+                        android:textSize="15sp" />
 
-                    <android.support.v7.widget.AppCompatTextView
-                        android:id="@+id/text3"
+                    <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:textSize="20sp"
-                        android:textColor="@android:color/black"/>
+                        android:gravity="start"
+                        android:paddingTop="3dp"
+                        android:text="Price Range :"
+                        android:textSize="15sp" />
 
-                    <android.support.v7.widget.AppCompatTextView
+                    <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="recommended by user"/>
+                        android:orientation="horizontal">
 
-                    <android.support.v7.widget.AppCompatTextView
-                        android:id="@+id/text4"
+                        <android.support.v7.widget.AppCompatTextView
+                            android:id="@+id/text3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="2000"
+                            android:textColor="@android:color/black"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" 〜 "
+                            android:textSize="15sp" />
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:id="@+id/text4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="5000"
+                            android:textColor="@android:color/black"
+                            android:textSize="15sp" />
+
+                    </LinearLayout>
+
+                    <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:textSize="20sp"
-                        android:textColor="@android:color/black"/>
+                        android:gravity="start"
+                        android:paddingTop="3dp"
+                        android:text="@string/available"
+                        android:textSize="15sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/icon1"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_marginRight="5dp"
+                            android:src="@drawable/meat_unknown_icon" />
+
+                        <ImageView
+                            android:id="@+id/icon2"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_marginRight="5dp"
+                            android:src="@drawable/alcohol_unknown_icon" />
+
+                        <ImageView
+                            android:id="@+id/icon3"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_marginRight="5dp"
+                            android:src="@drawable/credit_unknown_icon" />
+
+                    </LinearLayout>
 
                 </LinearLayout>
 
             </LinearLayout>
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="available"
-                    android:textSize="15sp"
-                    android:paddingLeft="10dp"
-                    android:paddingRight="20dp"
-                    android:layout_gravity="center_vertical"/>
-                <ImageView
-                    android:id="@+id/icon1"
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:layout_marginHorizontal="5dp"/>
-                <ImageView
-                    android:id="@+id/icon2"
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:layout_marginHorizontal="5dp"/>
-                <ImageView
-                    android:id="@+id/icon3"
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:layout_marginHorizontal="5dp"/>
-
-            </LinearLayout>
-
         </LinearLayout>
 
+        <ImageButton
+            android:id="@+id/mapbutton"
+            android:src="@drawable/map_marker2"
+            android:layout_width="40dp"
+            android:layout_height="55dp"
+            android:scaleType="fitXY"
+            android:layout_gravity="end"
+            android:background="@color/trasparent"
+            android:layout_marginTop="90dp"/>
+    </android.support.v7.widget.CardView>
 
-
-
-
-    </android.support.v7.widget.CardView>a
-</LinearLayout>
+</RelativeLayout>
